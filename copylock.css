@@ -1,0 +1,17 @@
+/*
+Arkusz stylów CSS chroni¹cy stronê przed kopiowaniem z niej tekstu.
+Uwaga! Istniej¹ proste sposoby obejœcia tej ochrony przez bardziej
+doœwiadczonych u¿ytkowników.
+
+Jan Mleczko, sierpieñ 2024
+*/
+
+/* Zablokuj zaznaczanie tekstu w celu skopiowania */
+body { user-select: none; }
+
+/* Zablokuj drukowanie strony - wydrukuje siê pusta strona */
+@media print {
+  /* Ukryj wszystko podczas drukowania. */
+  body { display: none; }
+}
+
